@@ -216,6 +216,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
+# WiFi HAL
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
+
 # Wifi
 PRODUCT_PACKAGES += \
     libqsap_sdk \
