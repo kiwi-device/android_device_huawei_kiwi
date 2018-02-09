@@ -78,10 +78,10 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
-# CM Hardware
+# LineageOS Hardware
 BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    $(DEVICE_PATH)/cmhw
+    hardware/lineage/lineagehw \
+    $(DEVICE_PATH)/lineagehw
 
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
