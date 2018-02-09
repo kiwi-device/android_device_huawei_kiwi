@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_kernel_huawei_kiwi",
+    "target_path": "kernel/huawei/kiwi",
+    "branch": "cm-14.1"
+  },
+  {
+    "remote": "github",
+    "repository": "TheMuppets/proprietary_vendor_huawei",
+    "target_path": "vendor/huaweis",
+    "branch": "cm-14.1"
+  }
+]

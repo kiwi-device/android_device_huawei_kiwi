@@ -99,6 +99,9 @@ PRODUCT_PACKAGES += \
     libshim_cutils \
     libshim_signinfolistener
 
+# Dexpreopt
+WITH_DEXPREOPT := true
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8916 \
