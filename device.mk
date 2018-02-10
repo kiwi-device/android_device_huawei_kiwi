@@ -86,10 +86,12 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    init.qcom.bt.sh
+    init.qcom.bt.sh \
+    android.hardware.bluetooth@1.0-impl
 
 # Camera
 PRODUCT_PACKAGES += \
+	android.hardware.camera.provider@2.4-impl-legacy \
     camera.msm8916 \
     libmm-qcamera \
     Snap
@@ -151,9 +153,18 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/goodix.kl:system/usr/keylayout/goodix.kl \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
+# Keymaster HAL
+PRODUCT_PACKAGES += \
+	android.hardware.keymaster@3.0-impl
+
+# Vibrator
+PRODUCT_PACKAGES += \
+	android.hardware.vibrator@1.0-impl
+
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8916
+    lights.msm8916 \
+    android.hardware.light@2.0-impl 
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -177,7 +188,12 @@ PRODUCT_PACKAGES += \
 
 # Power HAL
 PRODUCT_PACKAGES += \
+	android.hardware.power@1.0-impl \
     power.msm8916
+
+# GNSS HAL
+PRODUCT_PACKAGES += \
+	android.hardware.gnss@1.0-impl
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -206,7 +222,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.msm8916
+    sensors.msm8916 \
+	android.hardware.sensors@1.0-impl
 
 # Thermal
 PRODUCT_COPY_FILES += \
@@ -215,6 +232,10 @@ PRODUCT_COPY_FILES += \
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
+
+# USB HAL
+PRODUCT_PACKAGES += \
+	android.hardware.usb@1.0-service
 
 # WiFi HAL
 PRODUCT_PACKAGES += \
