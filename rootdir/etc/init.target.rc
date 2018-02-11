@@ -43,6 +43,9 @@ on fs
         /system/lib64/libcutils.so|libshim_cutils.so:\
         /system/vendor/lib/libmmcamera_hdr_gb_lib.so|/system/vendor/lib/libmmqjpeg_codec.so
 
+    wait /dev/block/platform/soc.0/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc.0/${ro.boot.bootdevice} /dev/block/bootdevice
+
     mount_all fstab.qcom
 
     swapon_all fstab.qcom
